@@ -20,15 +20,19 @@ class Array1 extends Component {
          console.log("App.js setState updated");
      }
 
+     removePost = (id) => {
+        this.setState({posts: this.state.posts.filter(post => post.id !== id)});
+     }
+
 
 
     render() {
         const { posts } = this.state;
-        const { handleSomething} = this;
+        const { handleSomething, removePost} = this;
         
         return (
            <div>
-               <Posts posts={posts} callback={handleSomething}/>
+               <Posts posts={posts} callback={handleSomething} removePost={removePost} />
            </div> 
         );
     }

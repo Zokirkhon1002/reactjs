@@ -5,7 +5,10 @@ class OutputArrays extends Component {
     state = {  }
     render() {
         return (
-            <Array1 />
+            <div>
+                <Array1 />
+            </div>
+
         );
     }
 }

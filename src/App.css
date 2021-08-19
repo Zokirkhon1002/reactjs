@@ -13,7 +13,12 @@
   }
 }
 body {
-  background-color: rgba(0,0,0,0.1)
+  background-color: rgba(0,0,0,0.1);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+
 }
 .App-header {
   background-color: #282c34;
@@ -25,11 +30,37 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+button {
+  position: absolute;
+  left: 200px;
+  width: 20%;
+  max-width: 100px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(124, 218, 105);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid rgb(106, 147, 235);
+  color: #000;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #61dafb;
+  color: white;
+  border-radius: 0px 16px 0px 16px;
+  border-bottom: 3px solid rgb(106, 235, 112);
+}
 
 .App {
   color: #61dafb;
   font-size: 20px;
   text-shadow: 0 2px 5px #2b2a2a;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
@@ -39,4 +70,9 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+p{
+  width: 500px;
+  text-align: left;
 }
